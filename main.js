@@ -4,8 +4,6 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls"
 import Hyperbeam from "@hyperbeam/web"
 import {Font, FontLoader} from "three/examples/jsm/loaders/FontLoader"
 import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry"
-
-import fontURL from "./fonts/helvetiker_regular.typeface.json?url"
 import { FontLoader2 } from './ignore/fontloader';
 
 
@@ -94,7 +92,8 @@ async function main(embedURL) {
 
 
 	function loadFont() {
-		const loader = new FontLoader2();
+		const loader = new FontLoader2(); // feel free to use the normal font loader from three.js, this is a workaround for sandbox only
+		const fontURL = "https://raw.githubusercontent.com/mrdoob/three.js/master/examples/fonts/helvetiker_regular.typeface.json"
 		loader.load( fontURL , function ( response ) {
 			font = response;
 			createText();

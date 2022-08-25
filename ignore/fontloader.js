@@ -20,7 +20,7 @@ class FontLoader2 extends Loader {
 		loader.setPath(this.path);
 		loader.setRequestHeader(this.requestHeader);
 		loader.setWithCredentials(scope.withCredentials);
-		fetch("https://raw.githubusercontent.com/mrdoob/three.js/master/examples/fonts/helvetiker_regular.typeface.json")
+		fetch(url)
 			.then(response => response.json())
 			.then(text => {
 				let json = text;
