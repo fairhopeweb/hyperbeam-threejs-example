@@ -12,7 +12,7 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
-    "@hyperbeam/web": "^0.0.15",
+    "@hyperbeam/web": "0.0.19-alpha.1",
     "three": "^0.143.0"
   },
   "main": "/main.js"
