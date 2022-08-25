@@ -6,7 +6,7 @@ import {Font, FontLoader} from "three/examples/jsm/loaders/FontLoader"
 import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry"
 
 import fontURL from "./fonts/helvetiker_regular.typeface.json?url"
-import { FontLoader2 } from './fontloader';
+import { FontLoader2 } from './ignore/fontloader';
 
 
 (async () => {
